@@ -1,0 +1,87 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background: #f1f1f1;
+}
+header{
+    padding: 30px;
+    text-align: center;
+    background:white;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+nav{
+    overflow: hidden;
+    background-color:#333;
+}
+
+nav a{
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a#right{
+    float:right;
+}
+
+.content-left{
+    float:left;
+    width:75%;
+}
+
+.content-right{
+    float:left;
+    width:25%;
+    background:#f1f1f1;
+    padding-left: 15px; 
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .content-left, .content-right {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    nav a{
+        float: none;
+        width: 100%;
+    }
+}
